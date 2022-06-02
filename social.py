@@ -38,21 +38,3 @@ class Vk_user:
             photos_list = sorted(photos_list, key=lambda x: x[1], reverse=True)
         print(f'Найдено фотографий - ' + str(res['response']['count']))
         return(photos_list)
-
-class Insta_user():
-    url = 'https://api.vk.com/method/'
-    def __init__(self, token, version):
-        self.params = {
-            'access_token': token,
-            'v': version    
-        }
-
-class Ok_user():
-    url = 'https://api.vk.com/method/'
-    def __init__(self, token, version):
-        self.params = {
-            'access_token': token,
-            'v': version    
-        }
-
-
